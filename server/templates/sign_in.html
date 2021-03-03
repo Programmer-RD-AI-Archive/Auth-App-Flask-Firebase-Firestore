@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block head %}
+<title>
+    Sign In
+</title>
+{% endblock %}
+{% block body %}
+<br>
+<br>
+<div class="container">
+    <div class="jumbotron">
+        <div class="header">
+            <h1>
+                <b>Sign In <i>Send Email</i></b>
+            </h1>
+        </div>
+        <br>
+        <form method="POST">
+            <div class="form-group">
+                <label style="color: black;" for="email and username">Email address or User Name</label>
+                <input   style="color: black;" type="text" autocomplete="off" required name="UNOE" placeholder="Please Enter Your Email address or Your User Name" class="form-control" id="email and username"
+                    aria-describedby="help">
+            </div>
+            <div class="form-group">
+                <label for="password"  style="color: black;" >Password</label>
+                <input style="color: black;" type="password" autocomplete="off" class="form-control" id="password" placeholder="Please Enter Your Password" required name="P">
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+</div>
+<br>
+<br>
+{% endblock %}
